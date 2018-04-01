@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="demo.hxzk.com.myapplication.MainActivity">
+
+
+    <!-- autoStart="true" 自动加载下一个View
+    flipInterval 时间间隔3000
+    inAnimation  设置view进入动画
+    outAnimation 设置view退出动画
+     android:autoStart="true" 自动轮播,如果设置该属性则开始按钮可有可无-->
+    <ViewFlipper
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/viewflipper"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/roll_in"
+        android:outAnimation="@anim/roll_out"
+        android:autoStart="true"
+        android:background="#f0fef0">
+    </ViewFlipper>
+
+
+    <Button
+
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="开始"/>
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:layout_marginTop="30dp"
+        android:text="停止"/>
+
+    <Button
+        android:id="@+id/btn_currentView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="获取整个页面展示内容"/>
+</LinearLayout>

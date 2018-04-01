@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 位移动画 fromYDelta 起始y  toYDelta 结束Y  duration 持续时间-->
+    <translate android:fromYDelta="0" android:toYDelta="-100%p" android:duration="500"/>
+    <!-- 渐变动画 fromAlpha 开始透明度   toAlpha 结束透明度  -->
+    <alpha android:fromAlpha="1.0" android:toAlpha="0.0" android:duration="500" />
+</set>
